@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IoT House</title>
+  <link rel="stylesheet" href="style.css">
+</head>  
+
+<body>
+    <div id="header">
+        <ul>
+          <li><center>IoT House</center></li>    
+        </ul>          
+    </div>    
+        <button class="tablink" onclick="openPage('Livingroom', this, 'pink')" id="defaultOpen">Living Room</button>
+        <button class="tablink" onclick="openPage('Bedroom', this, 'pink')" >Bed Room</button>
+        <button class="tablink" onclick="openPage('Garden', this, 'green')" >Garden</button>
+    <div id="Livingroom" class="tabcontent">
+        <div class="row">
+            <div class="column">
+                <h3 style ="color:rgb(17, 0, 255)">Temperature: <span id="nhietdo"></span></h3>
+                <h3><img src="img\temperature.png" id="temp"></h3>
+            </div>
+            <div class="column">
+                <h3 style ="color:rgb(17, 0, 255)">Humidity: <span id="doam"></span></h3>
+                <h3><img src="img\humidity.png" id="humi"></h3>
+            </div>
+            <div class="column">
+                <h3 style ="color:rgb(17, 0, 255)">Rain: <span id="luongmua"></span></h3>
+                <h3><img src="img\rain.png" id="rn"></h3>
+            </div>           
+        </div>
+
+        <div class="row1">
+            <div class="column">
+                <h3><img src="img\light_bulb_off.png" id="led">
+                <center><h3 style ="color:rgb(17, 0, 255)">Led</h3>
+                <button type="button" id="btn1" >On</button>
+                <button type="button" id="btn2" >Off</button></center>
+                </h3>
+            </div> 
+            <div class="column">
+                <h3><img src="img\fan_off.jpg" id="fan">
+                <center><h3 style ="color:rgb(17, 0, 255)">Fan</h3>
+                <button type="button" id="btn3" >On</button>
+                <button type="button" id="btn4" >Off</button></center>
+                </h3>
+            </div>
+            <div class="column">
+                <h3><img src="img\window_open.jpg" id="window">
+                <center><h3 style ="color:rgb(17, 0, 255)">Window</h3>       
+                <button type="button" id="btn5" >On</button>
+                <button type="button" id="btn6" >Off</button></center>
+                </h3>
+            </div>    
+        </div>  
+    </div>
+    <div id="Bedroom" class="tabcontent">
+        <div class="row">
+            <div class="column"> 
+                <h3 style ="color:rgb(17, 0, 255)">Temperature: <span id="nhietdo1"></span></h3>
+                <h3><img src="img\temperature.png" id="temp1"></h3>
+            </div>
+            <div class="column"> 
+                <h3 style ="color:rgb(17, 0, 255)">Humidity: <span id="doam1"></span></h3>
+                <h3><img src="img\humidity.png" id="humi1"></h3>
+            </div>
+            <div class="column"> 
+                <h3 style ="color:rgb(17, 0, 255)">GasSensor: <span id="khiga"></span></h3>
+                <h3><img src="img\gassensor.jpg" id="gas"></h3> 
+            </div>
+        </div>
+
+        <div class="row1">
+            <div class="column">
+                <h3><img src="img\light_bulb_off.png" id="led1">
+                <center><h3 style ="color:rgb(17, 0, 255)">Led</h3>
+                <button type="button" id="btn7" >On</button>
+                <button type="button" id="btn8" >Off</button></center>
+                </h3>
+            </div> 
+            <div class="column">
+                <h3><img src="img\airc_off.png" id="airc">
+                <center><h3 style ="color:rgb(17, 0, 255)">Air Conditioner</h3>
+                <button type="button" id="btn9" >On</button>
+                <button type="button" id="btn10" >Off</button></center>
+                </h3>
+            </div>
+            <div class="column">
+                <h3><img src="img\speaker_off.jpg" id="speaker">
+                <center><h3 style ="color:rgb(17, 0, 255)">Speaker</h3>       
+                <button type="button" id="btn11" >On</button>
+                <button type="button" id="btn12" >Off</button></center>
+                </h3>
+            </div> 
+        </div>  
+    </div>
+    <div id="Garden" class="tabcontent">
+        <div class="row">
+            <div class="column"> 
+                <h3 style ="color:rgb(235, 242, 242)">Temperature: <span id="nhietdo2"></span></h3>
+                <h3><img src="img\temperature.png" id="temp2"></h3>
+            </div>
+            <div class="column">
+                <h3 style ="color:rgb(235, 242, 242)">Humidity: <span id="doam2"></span></h3> 
+                <h3><img src="img\humidity.png" id="humi2"></h3>
+            </div>
+            <div class="column"> 
+                <h3 style ="color:rgb(235, 242, 242)">Rain: <span id="luongmua2"></span></h3>
+                <h3><img src="img\rain.png" id="rn2"></h3>
+            </div>
+        </div>
+    
+        <div class="row1">
+            <div class="column">
+                <h3><img src="img\light_bulb_off.png" id="led2">
+                <center><h3 style ="color:rgb(235, 242, 242)">Led</h3>
+                <button type="button" id="btn13" >On</button>
+                <button type="button" id="btn14" >Off</button></center>
+                </h3>
+            </div> 
+            <div class="column">
+                <h3><img src="img\phone_off.jpg" id="phone">
+                <center><h3 style ="color:rgb(235, 242, 242)">PHONE</h3>
+                <button type="button" id="btn15" >On</button>
+                <button type="button" id="btn16" >Off</button></center>
+                </h3>
+            </div>
+            <div class="column">
+                <h3><img src="img\wateringplant.png" id="water">
+                <center><h3 style ="color:rgb(235, 242, 242)">Watering</h3>       
+                <button type="button" id="btn17" >On</button>
+                <button type="button" id="btn18" >Off</button></center>
+                </h3>
+            </div>    
+        </div>  
+      </div>
+    </div>
+
+    <footer>
+        <div class="row2">
+            <div class="column">
+                <h3 style ="color:rgb(19, 19, 21)">HwngNguyen</h3>
+                <h3><img src="img\Hung.jpg" id="hung"></h3>
+            </div>
+            <div class="column">
+                <h3 style ="color:rgb(19, 19, 21)">QuanDinh</h3>
+                <h3><img src="img\Quan.jpg" id="quan"></h3>
+            </div>
+            <div class="column">
+                <h3 style ="color:rgb(19, 19, 21)">KhanhNguyen</h3>
+                <h3><img src="img\Khanh.jpg" id="khanh"></h3>
+            </div>
+        </div>
+        <table id="table">
+            <tr>
+              <th style="width:25%">Nguyen Gia Hung</th>
+              <th style="width:25%">Nguyen Dinh Hong Quan</th>
+              <th style="width:25%">Nguyen Tran Duy Khanh</th>
+            </tr>
+            <tr>
+              <th>21</th>
+              <th>21</th>
+              <th>21</th>
+            </tr>
+            <tr>
+              <th>19119052</th>
+              <th>19119045</th>
+              <th>19119063</th>
+            </tr>
+          </table>
+        <center>
+        <h4>Contact: 0777xyz77x </h4>
+        <h4>Email: so1vovanngan@gmail.com </h4>
+        <h4>Address: 1, Vo Van Ngan, Linh Chieu Ward, Thu Duc District, HCM City </h4>
+        </center>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+    <script src="function.js"></script>    
+
+</body>
+</html> 
